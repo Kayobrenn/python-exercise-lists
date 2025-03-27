@@ -2,7 +2,7 @@ def coletar_dados():
     alturas = []
     generos = []
     
-    for i in range(2):
+    for i in range(15):
         altura = float(input(f"Digite a altura da pessoa {i+1}: "))
         genero = input(f"Digite o gênero da pessoa {i+1} (Masculino ou Feminino): ").strip().lower()
         
@@ -19,7 +19,7 @@ def calcular_maior_menor_altura(alturas):
 
 
 def calcular_media_masculino(alturas, generos):
-    masculino_alturas = [alturas[i] for i in range(2) if generos[i] == 'masculino']
+    masculino_alturas = [alturas[i] for i in range(15) if generos[i] == 'masculino']
     if masculino_alturas:
         media_masculino = sum(masculino_alturas) / len(masculino_alturas)
     else:
